@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.video {
+    position: fixed;
+    min-width: 100%;
+    height: auto;
+    z-index: -1;
+    left: 0;
+    top: 0;
+}
+
+#leftlink {
+    color: white;
+    text-decoration: none;
+    position: static;
+    font-size: xx-large;
+    letter-spacing: 5px;
+}
+
+.linkContent {
+    float: right;
+    margin-top: .5rem;
+}
+
+#links {
+    color: white;
+    padding: 1vw;
+    text-decoration: none;
+}
+
+.navContent {
+    width: 100%;
+    height: auto;
+    padding: 0.1rem;
+    transition: 0.5s;
+}
+
+.navContent:hover {
+    background-color: rgba(100, 100, 100, 0.5);
+}
+
+.nav {
+    /* margin-right: 10vw;  */
+    font-family: monospace;
+    font-size: large;
+    margin: 1rem;
+}
+
+h3,
+h1,
+p,
+li {
+    color: white;
+}
+
+.centerheading {
+    font-weight: 100;
+    font-size: 4rem;
+    font-family: monospace;
+    letter-spacing: 1.5rem;
+    margin-top: 20vh;
+    text-align: center;
+    transition: 0.5s ease;
+}
+
+.footer-links {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    width: max-content;
+}
+
+img {
+    width: 1.5rem;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 1vw;
+}
+
+/* Cursor Glow */
+.cursor-glow {
+    position: absolute;
+    width: 100px;
+    /* Adjust size as needed */
+    height: 100px;
+    border-radius: 50%;
+    pointer-events: none;
+    /* Makes sure it doesn't block any other elements */
+    background: rgba(255, 255, 255, 0.1);
+    /* Soft yellow glow, adjust color as needed */
+    box-shadow: 0 0 30px 30px rgba(255, 255, 255, 0.1);
+    /* Creates the glow effect */
+    /* transition: transform 0.1s ease; */
+    /* Smooth movement */
+    z-index: 1000;
+    /* Keep it above other content */
+}
+
+
+@media (max-width: 800px) {
+    .navContent {
+        background-color: rgba(100, 100, 100, 0.5);
+        height: auto;
+    }
+
+    .centerheading {
+        font-size: xxx-large;
+        transition: 0.5s ease;
+    }
+}
